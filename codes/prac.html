@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ #yo {
+ 	min-height: 100px;
+    min-width: 100px;
+    padding:40px;
+    border: 1px solid #000000;
+}
+</style>
+</head>
+<body>
+
+<p id="myDIV">Click the button </p>
+<div id ="yo"></div>
+
+
+<script>
+for (var i = 0; i < 5; i++) {
+  var btn = document.createElement('button');
+  btn.appendChild(document.createTextNode('Button ' + i));
+  btn.addEventListener('click', function(){ console.log(i); },false);
+  document.body.appendChild(btn);
+}
+</script>
+
+</body>
+</html>
